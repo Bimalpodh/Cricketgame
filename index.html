@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cricket Game Project</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+
+<body>
+
+
+
+  <h1 class="head">::: <u>My Cricket Game</u> :::</h1>
+  <div class="field"><br><br><br>
+  <div class="but">
+    <!-- BAT_BUTTON -->
+    <button class="choicebutton" onclick="let computerChoice =generateComputerChoice();
+    let resultMsg=getResult('Bat',computerChoice);
+    showResult('Bat',computerChoice,resultMsg);"> <img src="../images/bat.png" alt="BAT-image" class="choice-image"> </button>
+    
+<!-- BAll_BUTTON -->
+    <button class="choicebutton" onclick=" computerChoice =generateComputerChoice();
+     resultMsg=getResult('Ball',computerChoice);
+    
+    showResult('Ball',computerChoice,resultMsg);"> <img src="../images/ball.png" alt="ball-image" class="choice-image"> </button>
+<!-- STUMP_BUTTON -->
+    <button class="choicebutton" onclick=" computerChoice = generateComputerChoice();
+     resultMsg = getResult('Stump',computerChoice);
+    showResult('Stump',computerChoice,resultMsg);
+   "> <img src="../images/stump.png" alt="stump-image" class="choice-image"> </button>
+
+
+   <h3 id="userMove"></h3>
+   <h3 id="computerMove"></h3>
+   <h3 id="result"></h3>
+   <h3 id="score"></h3>
+   <!-- RESET-BUTTON -->
+ <br><br>
+ <button class="reset-button" id="clear" onclick="localStorage.clear()
+ resetscore()
+
+ ">RESET</button>
+    
+  </div>
+</div>
+  <script src="\Dublicates\Cricket Project\JS\script.js"></script>
+
+</body>
+
+</html>

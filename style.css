@@ -1,0 +1,33 @@
+body{
+  text-align: center;
+  
+}
+h1{
+  color: rgb(99, 58, 8);
+}
+.choicebutton{
+
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+  border: none;
+  background-color: rgb(147, 203, 91);
+  border-radius: 50px;
+  cursor: pointer;
+  
+}
+.choice-image{
+  height: 75px;
+}
+.reset-button{
+  background-color: rgb(182, 32, 70);
+  height: 30px;
+  width: 140px;
+  box-shadow: 1px 1px 1px 3px rgb(117, 185, 181);
+  border-radius: 10px;
+}
+.field{
+  border-radius: 50%;
+  height: 600px;
+  border: 5px double orange;
+}
